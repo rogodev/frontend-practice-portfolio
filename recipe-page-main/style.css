@@ -1,0 +1,158 @@
+/* === Fuente personalizada === */
+@font-face {
+    font-family: "Outfit"; /* Nombre que usaremos en font-family */
+    src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+}
+
+/* === Variables CSS globales === */
+:root {
+    --main-color: rgb(127, 8, 8);             /* Color principal para títulos, acentos */
+    --background-color: rgb(255, 231, 202);   /* Fondo general de la página */
+    --pink-color: rgb(254, 244, 255);         /* Fondo suave para bloques destacados */
+}
+
+/* === Reset básico + fuente por defecto === */
+* {
+    margin: 0;                  /* Eliminar márgenes por defecto */
+    padding: 0;                 /* Eliminar relleno por defecto */
+    box-sizing: border-box;    /* Incluir bordes y padding en el tamaño total */
+    font-family: "Outfit", sans-serif; /* Fuente general para todo el sitio */
+}
+
+/* === Estilos generales del cuerpo de la página === */
+body {
+    width: 100dvw;                             /* Ancho igual al viewport dinámico */
+    background-color: var(--background-color);/* Usar el color de fondo definido */
+    display: flex;                             /* Activar Flexbox */
+    flex-direction: column;                   /* Organizar elementos en columna */
+    justify-content: center;                  
+    align-items: center;                      /* Centrar contenido horizontalmente */
+}
+
+/* === Contenedor principal del contenido === */
+.main-container {
+    width: 100%;
+    max-width: 650px;             /* Evitar que crezca demasiado en pantallas grandes */
+    border-radius: 25px;          /* Bordes redondeados */
+    margin: 5rem 0;               /* Espacio superior e inferior */
+    padding: 35px;                /* Espaciado interno */
+    background-color: white;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* Centrado horizontal */
+    gap: 20px;                    /* Separación entre elementos */
+}
+
+/* === Imagen destacada de la receta === */
+.main-container figure img {
+    width: 100%;
+    border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+
+/* === Bloque informativo (descripción, resumen) === */
+.info-resume {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;            /* Espacio entre párrafos */
+    line-height: 25px;    /* Altura de línea para mejor lectura */
+}
+
+.info-resume p {
+    font-size: 14px; /* Tamaño de fuente reducido para texto secundario */
+}
+
+/* === Sección: Tiempo de preparación === */
+.preparation-time {
+    width: 100%;
+    background-color: var(--pink-color); /* Fondo rosa suave */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.preparation-time h3 {
+    font-size: 18px;
+    color: var(--main-color); /* Título en color principal */
+}
+
+
+.preparation-time ul li::marker {
+    color: var(--main-color); /* Cambiar el color del punto de lista */
+}
+
+/* === Sección: Ingredientes === */
+.ingredients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.ingredients ul li::marker {
+    color: var(--main-color);
+}
+
+/* === Línea divisoria horizontal === */
+hr {
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(204, 204, 204); /* Color gris claro */
+}
+
+/* === Sección: Instrucciones paso a paso === */
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.instructions ol, .ingredients ul, .preparation-time ul {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.instructions ol li,.ingredients ul li, .preparation-time ul li {
+    padding-left: 10px; /* Espacio entre el número y el texto */
+}
+
+.instructions ol li::marker {
+    color: var(--main-color); /* Color de los números de la lista */
+}
+
+/* === Sección: Información nutricional === */
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.h2-title{
+    color: var(--main-color);
+    font-size: 26px;
+}
+
+.nutrition table {
+    border-collapse: collapse; /* Quita espacios entre bordes de celdas */
+    width: 100%;
+}
+
+.nutrition table td {
+    padding: 10px;
+}
+
+.nutrition tr {
+    border-bottom: 1px solid #e1e1e1; /* Línea entre cada fila */
+}
+
+.nutrition tr:last-child {
+    border-bottom: none; /* Elimina la línea de la última fila */
+}
