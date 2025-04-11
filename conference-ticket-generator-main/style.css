@@ -1,0 +1,126 @@
+:root{
+    --main-text-color : white;
+    --grey-text-color : rgb(187, 187, 187);
+}
+
+@font-face {
+    font-family: "Inconsolata-extrabold";
+    src: url(assets/fonts/static/Inconsolata-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Inconsolata-regular";
+    src: url(assets/fonts/static/Inconsolata-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata-regular" , sans-serif;
+}
+
+body{
+    background-image: url(assets/images/background-desktop.png);
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+/*CARACTERÍSTICAS */
+
+main{
+    width: 50%;
+    height: fit-content;
+    gap: 20px;
+    color: var(--main-text-color);
+}
+.main-tittle{
+    width: 80%;
+    margin-top: 1em;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: wrap;
+    font-family: "Inconsolata-extrabold" , sans-serif;
+}
+.main-p-info{
+    color: var(--grey-text-color);
+}
+
+
+.no-events{
+    pointer-events: none;
+}
+
+
+
+form{
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+.upload-avatar::file-selector-button {
+    display: none;
+}
+
+/* Para navegadores que aún usan el pseudo-elemento anterior (por compatibilidad) */
+.upload-avatar::-webkit-file-upload-button {
+    display: none;
+}
+
+.upload-avatar{
+    background-color: rgba(255, 255, 255, 0.079);
+}
+
+
+.avatar{
+    width: 45%;
+    gap : 10px;
+}
+
+.avatar-info{
+    font-size: 10px;
+    gap: 5px;
+    color: var(--grey-text-color);
+}
+
+
+.upload-avatar{
+    height: 100px;
+    width: 100%;
+    border-radius: 6px;
+    border : 1px dashed var(--grey-text-color)
+}
+
+
+
+
+
+/* CARACTERÍSTICAS GLOBALES*/
+
+.display-flex{
+    display: flex;
+}
+.flex-dir-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-item-center{
+    align-items: center;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="display-flex flex-dir-column justify-content-center align-item-center">
+
+  <!-- Static backgrounds decorations-->
+   <figure class="pattern-lines position-absolute no-events" style="top: 0;">
+    <img src="assets/images/pattern-lines.svg" alt="">
+  </figure>
+  
+  <!-- Circles statics-->
+  <figure class="pattern-circle position-absolute no-events"  style="top: -100px; left: 300px;">
+    <img src="assets/images/pattern-circle.svg" alt="">
+  </figure>
+  <figure class="pattern-circle position-absolute no-events" style="top: 500px; right: 450px;">
+    <img src="assets/images/pattern-circle.svg" alt="">
+  </figure>
+
+  <!-- random svgs statics -->
+  <figure class="pattern-squiggly-line-bottom-desktop position-absolute no-events" style="bottom: -10px; right: 0px; transform: rotateY(180deg);">
+    <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+  </figure>
+  <figure class="pattern-squiggly-line-bottom-desktop position-absolute no-events" style="bottom: -10px; left: 0px;">
+    <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+  </figure>
+  <figure class="pattern-squiggly-line-top position-absolute no-events" style="top: 50px; right: 400px;">
+    <img src="assets/images/pattern-squiggly-line-top.svg" alt="">
+  </figure>
+
+
+
+  <!-- MAIN LOGO -->
+  <main class="display-flex flex-dir-column justify-content-center align-item-center">
+    <figure class="logo-figure" no-events>
+      <img class="logo-img" style="width: 200px;" src="assets/images/logo-full.svg" alt="">
+    </figure>
+
+    <!-- MAIN INFO-->
+    <h1 class="main-tittle">Your Journey to Coding Conf 2025 Starts Here!</h1>
+  
+    <p class="main-p-info">Secure your spot at next year's biggest coding conference.</p>
+
+    <!-- MAIN FORM-->
+    <form class="main-form display-flex flex-dir-column justify-content-center align-item-center" title="ticket-form">
+      <div class="avatar display-flex flex-dir-column" >
+        <label for="file">Upload Avatar</label>
+        <input class="upload-avatar display-flex flex-dir-column justify-content-center align-item-center" type="file" id="file" accept="image/png, image/jpg, image/jpeg">
+        <div class="avatar-info display-flex align-item-center">
+          <figure >
+            <img src="assets/images/icon-info.svg" alt="">
+          </figure>
+          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+      </div>
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name"></input>
+    </form>
+
+
+  </main>
+
+
+
+
+
+
+
+
+  <!-- Generated tickets ends -->
+  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">rogodev</a>.
+  </div> -->
+</body>
+</html>
