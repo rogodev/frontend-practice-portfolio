@@ -1,6 +1,11 @@
 :root{
     --main-text-color : white;
     --grey-text-color : rgb(187, 187, 187);
+    --neutral-color-500: hsl(245, 15%, 58%);
+    --neutral-color-700: hsl(245, 19%, 35%);
+    --neutral-color-900: hsl(248, 70%, 10%);
+    --orange-color-500: hsl(7, 88%, 67%);
+    --orange-color-700: hsl(7, 71%, 60%);
 }
 
 @font-face {
@@ -25,7 +30,8 @@ body{
     overflow: hidden;
     width: 100vw;
     gap: 20px;
-    padding: 40px;
+    padding: 30px;
+    
 }
 
 
@@ -34,12 +40,12 @@ body{
 main{
     width: 50%;
     height: fit-content;
-    gap: 20px;
+    gap: 25px;
     color: var(--main-text-color);
 }
 .main-tittle{
     width: 80%;
-    margin-top: 1em;
+    margin-top: 0.25em;
     font-size: 3rem;
     text-align: center;
     text-wrap: wrap;
@@ -47,11 +53,7 @@ main{
 }
 .main-p-info{
     color: var(--grey-text-color);
-}
-
-
-.no-events{
-    pointer-events: none;
+    font-size: 20px;
 }
 
 
@@ -59,47 +61,96 @@ main{
 form{
     width: 100%;
     text-align: left;
+    gap: 20px;
 }
-
 label{
     font-size: 20px;
 }
-
-
+.upload-avatar{
+    height: 120px;
+    width: 100%;
+    border-radius: 6px;
+    border : 1px dashed var(--grey-text-color);
+    /* Ocultar el texto por defecto */
+    color: transparent;
+    text-align: center;
+    background: none;
+    border: 2px dashed #b3b3b372; /* Mantener el borde dashed */
+    background-color: rgba(255, 255, 255, 0.079);
+}
 .upload-avatar::file-selector-button {
     display: none;
 }
-
 /* Para navegadores que aún usan el pseudo-elemento anterior (por compatibilidad) */
 .upload-avatar::-webkit-file-upload-button {
     display: none;
 }
-
-.upload-avatar{
-    background-color: rgba(255, 255, 255, 0.079);
-}
-
-
 .avatar{
+    position: relative;
     width: 45%;
     gap : 10px;
 }
-
 .avatar-info{
     font-size: 10px;
     gap: 5px;
     color: var(--grey-text-color);
 }
-
-
-.upload-avatar{
-    height: 100px;
+.drag-and-drop-figure{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.289);
+    background-color: rgba(255, 255, 255, 0.116);
+}
+.drag-and-drop-figure img{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.drag-and-drop-p{
+    position: absolute;
     width: 100%;
-    border-radius: 6px;
-    border : 1px dashed var(--grey-text-color)
+    top: 65%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+    color: var(--grey-text-color);
 }
 
 
+.label-container{
+    width: 45%;
+    gap: 10px;
+}
+
+input[type="text"],input[type = "email"]{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.112);
+    border: 1px double rgba(255, 255, 255, 0.438);
+    color: var(--main-text-color);
+    font-size: 16px;
+}
+
+.send-button{
+    width: 45%;
+    padding: 15px 20px;
+    margin-top: 0.5em;
+    color: var(--neutral-color-900);
+    font-family: "Inconsolata-extrabold",sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: var(--orange-color-500);
+    border-style: none;
+}
+.send-button:hover{
+    background-color: var(--orange-color-700);
+}
 
 
 
@@ -117,10 +168,14 @@ label{
 .align-item-center{
     align-items: center;
 }
-
 .position-absolute{
     position: absolute;
 }
+.no-events{
+    pointer-events: none;
+}
 
-
+.hidden{
+    display: none;
+}
 

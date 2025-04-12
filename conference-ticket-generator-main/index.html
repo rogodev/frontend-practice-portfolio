@@ -57,6 +57,13 @@
     <!-- MAIN FORM-->
     <form class="main-form display-flex flex-dir-column justify-content-center align-item-center" title="ticket-form">
       <div class="avatar display-flex flex-dir-column" >
+        <!-- Relative img -->
+        <div class="drag-and-drop">
+          <figure class="drag-and-drop-figure display-flex flex-dir-column align-item-center justify-content-center no-events">
+            <img src="assets/images/icon-upload.svg" alt="">
+          </figure>
+          <p class="drag-and-drop-p">Drag and drop or click to upload</p>
+        </div>
         <label for="file">Upload Avatar</label>
         <input class="upload-avatar display-flex flex-dir-column justify-content-center align-item-center" type="file" id="file" accept="image/png, image/jpg, image/jpeg">
         <div class="avatar-info display-flex align-item-center">
@@ -66,8 +73,22 @@
           <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
         </div>
       </div>
-      <label for="full-name">Full Name</label>
-      <input type="text" id="full-name"></input>
+      <div class="label-container display-flex flex-dir-column">
+        <label for="full-name">Full Name</label>
+        <input class="full-name" type="text" id="full-name" placeholder="Rodrigo Cabello Hernández" required></input>
+      </div>
+
+      <div class="label-container display-flex flex-dir-column">
+        <label for="email-address">Email Address</label>
+        <input class="email-address" type="email" id="email-address" placeholder="example@gmail.com" required></input>
+      </div>
+
+      <div class="label-container display-flex flex-dir-column">
+        <label for="github-username">GitHub Username</label>
+        <input class="github-username" type="text" id="github-username" placeholder="@rogodev" required></input>
+      </div>
+
+      <button class="send-button" type = "submit">Generate My Ticket</button>
     </form>
 
 
@@ -78,7 +99,7 @@
 
 
 
-
+  <script src="scrpt.js"></script>
 
   <!-- Generated tickets ends -->
   
