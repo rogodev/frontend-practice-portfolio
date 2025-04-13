@@ -37,6 +37,8 @@ body{
 
 /*CARACTERÍSTICAS */
 
+
+/* MAIN CONTAINER STYLES*/
 main{
     width: 50%;
     height: fit-content;
@@ -58,6 +60,8 @@ main{
 
 
 
+
+/* MAIN FORM PROPERTIES*/
 form{
     width: 100%;
     text-align: left;
@@ -66,6 +70,10 @@ form{
 label{
     font-size: 20px;
 }
+
+
+
+/*FORM DRAG AND DROP CONTAINER PROPERTIES*/
 .upload-avatar{
     height: 120px;
     width: 100%;
@@ -120,6 +128,31 @@ label{
     transform: translate(-50%);
     color: var(--grey-text-color);
 }
+.upload-avatar-buttons-container{
+    position: absolute;
+    width: 60%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    display: flex; 
+    gap: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--grey-text-color);
+    justify-content: center;
+}
+.remove-button,.change-button{
+    padding: 4px 2px;
+    width: 45%;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.144);
+    transition: 0.2s linear;
+}
+.remove-button:hover,.change-button:hover{
+    background-color: rgba(255, 255, 255, 0.222);
+    cursor:pointer;
+}
+
 
 
 .label-container{

@@ -43,29 +43,52 @@
 
 
 
-  <!-- MAIN LOGO -->
+  <!-- MAIN CONTAINER  -->
   <main class="display-flex flex-dir-column justify-content-center align-item-center">
+    <!-- Web logo figure -->
     <figure class="logo-figure" no-events>
       <img class="logo-img" style="width: 200px;" src="assets/images/logo-full.svg" alt="">
     </figure>
 
+
     <!-- MAIN INFO-->
     <h1 class="main-tittle">Your Journey to Coding Conf 2025 Starts Here!</h1>
-  
     <p class="main-p-info">Secure your spot at next year's biggest coding conference.</p>
+
+
 
     <!-- MAIN FORM-->
     <form class="main-form display-flex flex-dir-column justify-content-center align-item-center" title="ticket-form">
+
+
+      <!-- Avatar container  -->
       <div class="avatar display-flex flex-dir-column" >
-        <!-- Relative img -->
+
+        <!-- Relative img for the container-->
         <div class="drag-and-drop">
           <figure class="drag-and-drop-figure display-flex flex-dir-column align-item-center justify-content-center no-events">
             <img src="assets/images/icon-upload.svg" alt="">
           </figure>
-          <p class="drag-and-drop-p">Drag and drop or click to upload</p>
+          <p class="drag-and-drop-p no-events">Drag and drop or click to upload</p>
         </div>
+
+        
+        <!-- Static remove and change buttons to drag and drop the file -->
+        <div class="upload-avatar-buttons-container hidden">
+          <div class="remove-button" style="text-decoration: underline;">
+            <h4 class="no-events">Remove image</h4>
+          </div>
+          <div class="change-button">
+            <h4 class="no-events">Change Image</h4>
+          </div>
+        </div>
+
+
+        <!--  Label and input for upload avatar container -->
         <label for="file">Upload Avatar</label>
         <input class="upload-avatar display-flex flex-dir-column justify-content-center align-item-center" type="file" id="file" accept="image/png, image/jpg, image/jpeg" required>
+        
+        
         <div class="avatar-info display-flex align-item-center">
           <figure >
             <img src="assets/images/icon-info.svg" alt="">
@@ -73,28 +96,36 @@
           <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
         </div>
       </div>
+
+
+      <!-- Full name container -->
       <div class="label-container display-flex flex-dir-column">
         <label for="full-name">Full Name</label>
         <input class="full-name" type="text" id="full-name" placeholder="Rodrigo Cabello Hernández" required></input>
       </div>
 
+
+      <!-- Email container -->
       <div class="label-container display-flex flex-dir-column">
         <label for="email-address">Email Address</label>
         <input class="email-address" type="email" id="email-address" placeholder="example@gmail.com" required></input>
       </div>
 
+
+      
+      <!-- Github username container -->
       <div class="label-container display-flex flex-dir-column">
         <label for="github-username">GitHub Username</label>
         <input class="github-username" type="text" id="github-username" placeholder="@rogodev" required></input>
       </div>
 
+
+      
+      <!-- Form's send button -->
       <button class="send-button" type = "submit">Generate My Ticket</button>
     </form>
 
-
   </main>
-
-
 
 
 
