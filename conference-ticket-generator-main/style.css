@@ -52,6 +52,7 @@ main{
     text-align: center;
     text-wrap: wrap;
     font-family: "Inconsolata-extrabold" , sans-serif;
+    color: var(--main-text-color);
 }
 .main-p-info{
     color: var(--grey-text-color);
@@ -171,6 +172,7 @@ input[type="text"],input[type = "email"]{
 }
 
 
+
 .send-button{
     width: 45%;
     padding: 15px 20px;
@@ -213,3 +215,10 @@ input[type="text"],input[type = "email"]{
     display: none;
 }
 
+
+
+.tittle-span{
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* de naranja a rosa */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

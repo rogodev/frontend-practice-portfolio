@@ -1,4 +1,6 @@
 // VARIABLES FOR THE CODE
+const main = document.querySelector("main");
+const ticket_generated_container = document.querySelector(".ticket-generated");
 
 const uploadInput = document.querySelector(".upload-avatar");
 const uploadImage = document.querySelector(".drag-and-drop-figure img");
@@ -56,7 +58,11 @@ uploadInput.addEventListener("change",() => {
 
 
 
-sendButton.addEventListener("submit",()=>{
-    console.log("Hola");
+sendButton.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    main.classList.add("hidden");
+    ticket_generated_container.classList.remove("hidden");
+    const ticketGeneratedTittle = document.querySelector(".ticket-generated-tittle");
+    ticketGeneratedTittle.innerHTML = `Congrats, <span class = "tittle-span">${document.querySelector(".full-name").value}!</span> Your ticket it's ready!`
 })
 

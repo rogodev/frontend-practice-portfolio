@@ -104,6 +104,7 @@
         <input class="full-name" type="text" id="full-name" placeholder="Rodrigo Cabello Hernández" required></input>
       </div>
 
+      
 
       <!-- Email container -->
       <div class="label-container display-flex flex-dir-column">
@@ -122,11 +123,22 @@
 
       
       <!-- Form's send button -->
-      <button class="send-button" type = "submit">Generate My Ticket</button>
+      <button class="send-button" type = "submit" onclick="">Generate My Ticket</button>
     </form>
 
   </main>
 
+  <div class="ticket-generated display-flex flex-dir-column justify-content-center align-item-center hidden">
+    <!-- Web logo figure -->
+    <figure class="logo-figure" no-events>
+      <img class="logo-img" style="width: 200px;" src="assets/images/logo-full.svg" alt="">
+    </figure>
+
+
+    <!-- MAIN INFO-->
+    <h1 class="ticket-generated-tittle main-tittle"> Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="ticket-generated-p-info main-p-info" >Secure your spot at next year's biggest coding conference.</p>
+  </div>
 
 
 
