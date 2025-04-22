@@ -4,6 +4,8 @@
 :root{
     --main-bg-color : rgb(28, 17, 17);
     --cursor-bg-shadow : rgba(255, 138, 138, 0.211);
+    --selection-bg-color : rgba(219, 138, 138, 0.563);
+    --hover-color : rgb(219, 138, 138);
     --main-font-color : white;
     --nav-indicator-inactive : rgb(103, 103, 103);
     --second-font-color : rgb(123, 123, 123);
@@ -19,6 +21,11 @@
     font-family: var(--font-inter), sans-serif;
     scroll-behavior: smooth;
 }
+
+::selection {
+    background-color: var(--selection-bg-color); /* Color de fondo al seleccionar */
+    color: #ffffff;            /* Color del texto seleccionado */
+  }
 
 /*HTML TAGS*/
 body{
@@ -205,8 +212,20 @@ font-size: 16px;
     background-color: var(--cursor-bg-shadow);
     color: rgb(255, 183, 183);
 }
-#experience{
-    
+
+.curriculum-download h2,.curriculum-download svg{
+    transition: linear 0.1s;
+}
+.curriculum-download svg{
+    transform: translate(0,25%);
+}
+.curriculum-download:hover h2{
+    color: var(--hover-color);
+}
+
+.curriculum-download:hover h2 svg{
+    transform: translate(25%,0%);
+    fill: var(--hover-color);
 }
 
 
