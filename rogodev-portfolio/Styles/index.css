@@ -6,6 +6,8 @@
     --cursor-bg-shadow : rgba(255, 138, 138, 0.211);
     --selection-bg-color : rgba(219, 138, 138, 0.563);
     --hover-color : rgb(219, 138, 138);
+    --download-color : rgb(255, 146, 146);
+    --download-color-transparent : rgba(255, 146, 146, 0.373);
     --main-font-color : white;
     --nav-indicator-inactive : rgb(103, 103, 103);
     --second-font-color : rgb(123, 123, 123);
@@ -75,6 +77,9 @@ main{
 .margin-top-100{
     margin-top: 100px;
 }
+.padding-10{
+    padding: 10px;
+}
 .padding-20{
     padding: 20px;
 }
@@ -115,8 +120,8 @@ main{
 .margin-16{
     margin: 0 16px 0 0;
 }
-.margin-bottom-100{
-    margin-bottom: 100px;
+.margin-bottom-150{
+    margin-bottom: 150px;
 }
 .font-size-12{
     font-size: 12px;
@@ -148,6 +153,9 @@ font-size: 16px;
 .flex-wrap{
     flex-wrap: wrap;
 }
+.justify-content-rigth{
+    justify-content: right;
+}
 
 
 /*CURSOR GLOW*/
@@ -164,6 +172,7 @@ font-size: 16px;
 
 
 /*CUSTOM PROPERTIES*/
+/*HEADER*/
 .header-info{
     height: 25vh;
 }
@@ -190,15 +199,27 @@ font-size: 16px;
 .social-media-svg:hover g{
     fill: rgb(255, 255, 255);
 }
+
+
+/*ABOUT SECTION*/
 .about-p p{
     color: var(--second-font-color);
 }
-.experience-card{
+
+
+
+/*EXPERIENCE SECTION*/
+.experience-card,.project-card{
     border-radius: 15px;
     width: 100%;
+    transition: 0.2s linear;
 }
-.experience-card:hover{
+.experience-card:hover,.project-card:hover{
     background-color: var(--experience-bg-color);
+}
+.experience-card:hover .title{
+    transition: 0.1s linear;
+    color: var(--hover-color);
 }
 .experience-date{
     width: 30%;
@@ -213,20 +234,71 @@ font-size: 16px;
     color: rgb(255, 183, 183);
 }
 
-.curriculum-download h2,.curriculum-download svg{
-    transition: linear 0.1s;
+
+/*CURRICULUM BUTTON*/
+.curriculum-download h2,.curriculum-download svg,.project-card h4 svg{
+    transition: linear 0.07s;
 }
-.curriculum-download svg{
+.curriculum-download svg,.project-card h4 svg{
     transform: translate(0,25%);
 }
-.curriculum-download:hover h2{
+.curriculum-download:hover h2,.project-card:hover h4{
     color: var(--hover-color);
 }
-
-.curriculum-download:hover h2 svg{
+.curriculum-download:hover h2 svg,.project-card:hover h4 svg{
     transform: translate(25%,0%);
     fill: var(--hover-color);
 }
 
+
+
+
+/*DOWNLOAD BUTTON AND GITHUB FOR PROJECTS CARDS*/
+.download-button {
+    width: fit-content;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    overflow: hidden;
+    border: 2px solid var(--download-color);
+    color: var(--download-color);
+}
+.download-button:hover {
+    color: #fff;
+  }
+.download-button:hover:after {
+    width: 100%;
+}
+.download-button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--download-color);
+}
+.github-project g{
+    fill: var(--download-color-transparent);
+}
+.github-project:hover g{
+    fill: var(--download-color);
+}
+
+
+
+/**/
+.project-image img{
+    border-radius: 3px;
+}
 
 /*ANIMACIONES*/
