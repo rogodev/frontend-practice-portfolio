@@ -6,12 +6,18 @@
     --cursor-bg-shadow : rgba(255, 138, 138, 0.211);
     --selection-bg-color : rgba(219, 138, 138, 0.563);
     --hover-color : rgb(219, 138, 138);
-    --download-color : rgb(255, 146, 146);
+    --download-color : rgb(195, 118, 118);
     --download-color-transparent : rgba(255, 146, 146, 0.373);
     --main-font-color : white;
     --nav-indicator-inactive : rgb(103, 103, 103);
     --second-font-color : rgb(123, 123, 123);
     --experience-bg-color : rgba(165, 165, 165, 0.056);
+    --js: #ffe76050;
+    --py: #a7ff5950;
+    --rogodev-shop : #59f4ff50;
+    --js-hover : #ffe760;
+    --py-hover : #a7ff59;
+    --rogodev-shop-hover : #59f4ff;
     --font-inter :'Inter'; 
 }
 
@@ -76,6 +82,9 @@ main{
 }
 .margin-top-100{
     margin-top: 100px;
+}
+.margin-top-150{
+    margin-top: 150px;
 }
 .padding-10{
     padding: 10px;
@@ -289,11 +298,62 @@ font-size: 16px;
 }
 .github-project g{
     fill: var(--download-color-transparent);
+    transition: 0.1s linear;
 }
 .github-project:hover g{
     fill: var(--download-color);
 }
 
+
+/*DOWNLOAD CV BUTTON*/
+.download-CV-button {
+    width: fit-content;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid var(--download-color);
+    background: var(--download-color);
+  }
+.download-CV-button:hover {
+    background: transparent;
+    color: var(--download-color);
+  }
+
+/*DIFFERENT A TAGS*/
+.js g{
+    fill: var(--js);
+}
+.js:hover g{
+    fill: var(--js-hover);
+}
+.py g{
+    fill: var(--py);
+}
+.py:hover g{
+    fill: var(--py-hover);
+}
+.rogodev-shop g{
+    fill: var(--rogodev-shop);
+}
+.rogodev-shop:hover g{
+    fill: var(--rogodev-shop-hover);
+}
+
+.youtube-icon{
+    opacity: 0.35;
+    transition: 0.1s linear;
+}
+.youtube-icon:hover{
+    opacity: 1;
+}
 
 
 /**/

@@ -19,7 +19,7 @@
                     <ul class="header-nav-list list-no-style display-flex flex-direction-column gap-20 font-size-14 font-bold">
                         <li class="header-nav-element"><a class="text-no-decoration display-flex align-items-center " href="#about"><span class="nav-indicator active margin-16"> </span><span>ABOUT</span></a></li>
                         <li class="header-nav-element"><a class="text-no-decoration display-flex align-items-center " href="#experience"><span class="nav-indicator inactive margin-16"> </span><span>EXPERIENCE</span></a></li>
-                        <li class="header-nav-element"><a class="text-no-decoration display-flex align-items-center " href=""><span class="nav-indicator inactive margin-16"> </span><span>PROJECTS</span></a></li>
+                        <li class="header-nav-element"><a class="text-no-decoration display-flex align-items-center " href="#projects"><span class="nav-indicator inactive margin-16"> </span><span>PROJECTS</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,7 +48,7 @@
             </ul>
         </header>
         <main class="main display-flex flex-direction-column width-55-percent"space-between>
-            <section id="about" class="about-p padding-20 line-heigth-25 margin-bottom-150">
+            <section id="about" class="about-p padding-20 line-heigth-25 margin-bottom-150 section">
                 <p>
                     I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend 
                     thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, 
@@ -72,7 +72,7 @@
                      searching for Korok seeds Korok seeds.
                 </p>
             </section>
-            <section id="experience" class="experiences-container display-flex flex-direction-column gap-20" >
+            <section id="experience" class="experiences-container display-flex flex-direction-column gap-20 section" >
                 <div class="experience-card padding-20 display-flex space-between">
                     <div class="experience-date">
                         <h4 class="font-size-12 grey-color">OCT 2024 - PRESENT</h4>
@@ -152,13 +152,31 @@
                 </div>
 
                 <a href="Assets/PDF/cv.pdf" download="informe_final.pdf" class="curriculum-download text-no-decoration">                
-                    <h2 class="font-size-14">
-                        VIEW MY CURRICULUM  <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
-                    </h2>
+                    <a class="download-CV-button text-no-decoration font-size-16" target="_blank" href="Assets/PDF/cv.pdf" download="CV_Rodrigo_Cabello.pdf">DOWNLOAD MY CV</a>
                 </a>
 
             </section>
-            <section id="projects" class="projects margin-top-100">
+            <section id="projects" class="projects margin-top-150 section">
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <a href="https://adrianafernandezmorentin.com/" target="_blank" class="display-flex gap-20 text-no-decoration">
+                        <figure class="project-image">
+                            <img src="Assets/Images/adrianafernandezmorentin.png" width="140" alt="Adriana Fernánedz Morentin project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">ADRIANA FERNÁNDEZ MORENTIN - PHOTOGRAPHY PORTFOLIO <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                This website is a personal portfolio designed to showcase the work of photographer Adriana Fernández. Built using HTML, CSS, and JavaScript, the site highlights Adriana's creative vision through a clean and modern layout. Visitors can explore different galleries categorized by themes or projects, learn about Adriana’s background and artistic approach, and get in touch via a contact form. Interactive features and smooth transitions enhance the user experience, making it easy to navigate and appreciate the photographic work.
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">HTML</li>
+                                <li class="skill font-size-12">CSS</li>
+                                <li class="skill font-size-12">JavaScript</li>
+                                <li class="skill font-size-12">Go Daddy</li>
+                                <li class="skill font-size-12">Netlify</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
                 <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
                     <div class="display-flex gap-20">
                         <figure class="project-image">
@@ -237,7 +255,7 @@
                         <div class="display-flex flex-direction-column gap-15">
                             <h4 class="title font-size-12">MOTOR ENGINE <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
                             <p class="font-size-14 grey-color line-heigth-20">
-                                ¡Paella Va! is an online multiplayer restaurant cooking game made for an university subject called Projects II.  We were meant to create a videogame using SDL2. The main objective of this project is to use an engine lacking an editor. More information about the game can be found on GitHub!
+                                MotorEngine is a videogame engine made for an university subject called Projects III. The main objective of this project is the creation of our own videogame engine to use it for create an own videogame. More information about the engine can be found on GitHub!
                             </p>
                             <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
                                 <li class="skill font-size-12">SDL3</li>
@@ -253,14 +271,183 @@
                     </div>
                     <ul class="project-card-list display-flex gap-15 justify-content-rigth">
                         <li class="project-card-item list-no-style">
-                            <a target="_blank" href="https://github.com/javics2002/PaellaVa">
+                            <a target="_blank" href="https://github.com/javics2002/VroomVroom">
+                                <svg class="github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                                <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/vroomvroom.png" width="140" alt="VroomVroom! project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">VROOM VROOM <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                Vroom Vroom is a simple racing game made for an university subject called Projects III. We were meant to create a videogame using our own videogame engine. More information about the game can be found on GitHub!
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">Motor Engine</li>
+                                <li class="skill font-size-12">C++</li>
+                                <li class="skill font-size-12">GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a target="_blank" href="https://github.com/javics2002/VroomVroom">
+                                <svg class="github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                                <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/jsandpy.webp" width="140" alt="VroomVroom! project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">JavaScript and Python Courses <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                To support my students beyond the classroom, I developed two GitHub repositories focused on JavaScript and Python. The JavaScript repository introduces key concepts like DOM manipulation, event handling, and API interaction through practical examples. The Python repository helps students build a solid foundation in syntax, control structures, and problem-solving with hands-on exercises. Both are designed to encourage independent learning and reinforce essential programming skills.
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">JavaScript</li>
+                                <li class="skill font-size-12">Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a target="_blank" href="https://github.com/rogodev/JavaScript_Course">
+                                <svg class="js github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                                <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="project-card-item list-no-style">
+                            <a target="_blank" href="https://github.com/rogodev/Curso-de-Python-desde-Cero">
+                                <svg class="py github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                                <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/rogodevshop.png" width="140" alt="Rogodev Shop project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">Rogodev shop - Front <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                Rogodev Shop is a clothing store project currently in development, inspired by the bold and creative style of brands like Fake Gods. The site aims to blend streetwear aesthetics with original design concepts, offering a unique shopping experience. Although still under construction, Rogodev Shop reflects a strong identity and a clear direction, focusing on visual impact, individuality, and future functionality.
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">HTML</li>
+                                <li class="skill font-size-12">CSS</li>
+                                <li class="skill font-size-12">JavaScript</li>
+                                <li class="skill font-size-12">GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a target="_blank" href="https://github.com/rogodev/rogodev-shop">
+                                <svg class="rogodev-shop github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                                <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/magicdie.png" width="140" alt="Magic Die project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">Magic Die <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                Magic Die is a game created for the GMTK Game Jam 2022 in two days, where you move a die trying to make the number at the top coincide with the number at the goal.
+                                We have designed some levels with new mechanics to try to make the game more fun!
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">Unity</li>
+                                <li class="skill font-size-12">C#</li>
+                                <li class="skill font-size-12">Blender</li>
+                                <li class="skill font-size-12">GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a class="download-button text-no-decoration font-size-12" target="_blank" href="https://josemiguelv.itch.io/magic-die" ">PLAY ONLINE</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/bubblecat.png" width="140" alt="Magic Die project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">Bubble Cat <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                Bubble Cat is a short platformer game made for an university subject called Projects I. We were meant to create a videogame using Unity. The main objective of this project is the creation of a game using Unity, a well-known engine with lots of documentation, tutorials and assets.
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">Unity</li>
+                                <li class="skill font-size-12">C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a target="_blank" href="https://github.com/josemiguelvdz/Bubble-Cat">
                                 <svg class="github-project" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                                 <g fill="#ffffff50" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
                                 </svg>
                             </a>
                         </li>
                         <li class="project-card-item list-no-style">
-                            <a class="download-button text-no-decoration font-size-12" target="_blank" href="https://drive.usercontent.google.com/download?id=1ruajQ3kFmEtDsLwmGGxZcHLXjbw9veIv&export=download&authuser=0">DOWNLOAD</a>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=LY8MVfVo1wo">
+                                <svg class="youtube-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                                    <linearGradient id="PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1" x1="9.816" x2="41.246" y1="9.871" y2="41.301" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1)" d="M45.012,34.56c-0.439,2.24-2.304,3.947-4.608,4.267C36.783,39.36,30.748,40,23.945,40	c-6.693,0-12.728-0.64-16.459-1.173c-2.304-0.32-4.17-2.027-4.608-4.267C2.439,32.107,2,28.48,2,24s0.439-8.107,0.878-10.56	c0.439-2.24,2.304-3.947,4.608-4.267C11.107,8.64,17.142,8,23.945,8s12.728,0.64,16.459,1.173c2.304,0.32,4.17,2.027,4.608,4.267	C45.451,15.893,46,19.52,46,24C45.89,28.48,45.451,32.107,45.012,34.56z"></path><path d="M32.352,22.44l-11.436-7.624c-0.577-0.385-1.314-0.421-1.925-0.093C18.38,15.05,18,15.683,18,16.376	v15.248c0,0.693,0.38,1.327,0.991,1.654c0.278,0.149,0.581,0.222,0.884,0.222c0.364,0,0.726-0.106,1.04-0.315l11.436-7.624	c0.523-0.349,0.835-0.932,0.835-1.56C33.187,23.372,32.874,22.789,32.352,22.44z" opacity=".05"></path><path d="M20.681,15.237l10.79,7.194c0.689,0.495,1.153,0.938,1.153,1.513c0,0.575-0.224,0.976-0.715,1.334	c-0.371,0.27-11.045,7.364-11.045,7.364c-0.901,0.604-2.364,0.476-2.364-1.499V16.744C18.5,14.739,20.084,14.839,20.681,15.237z" opacity=".07"></path><path fill="#fff" d="M19,31.568V16.433c0-0.743,0.828-1.187,1.447-0.774l11.352,7.568c0.553,0.368,0.553,1.18,0,1.549	l-11.352,7.568C19.828,32.755,19,32.312,19,31.568z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="project-card-item list-no-style">
+                            <a class="download-button text-no-decoration font-size-12" target="_blank" href="https://javics.itch.io/bubble-cat">DOWNLOAD</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-card padding-20 display-flex flex-direction-column gap-20 font-size-12">
+                    <div class="display-flex gap-20">
+                        <figure class="project-image">
+                            <img src="Assets/Images/paperlunch.png" width="140" alt="Paper Lunch project">
+                        </figure>
+                        <div class="display-flex flex-direction-column gap-15">
+                            <h4 class="title font-size-12">PAPER LUNCH! <svg xmlns="http://www.w3.org/2000/svg" width="14" heigth="14" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg></h4>
+                            <p class="font-size-14 grey-color line-heigth-20">
+                                “Paper Lunch!” is a narrative resource management game in which the player takes on the role of Amelia, who is starting her own newspaper publishing company. In charge of editing and distribution, the player must try to earn enough money to buy their own publishing building and avoid going bankrupt.
+                            </p>
+                            <ul class="experience-card-skills display-flex gap-15 list-no-style flex-wrap">
+                                <li class="skill font-size-12">Phaser</li>
+                                <li class="skill font-size-12">JavaScript</li>
+                                <li class="skill font-size-12">Tiled</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="project-card-list display-flex gap-15 justify-content-rigth">
+                        <li class="project-card-item list-no-style">
+                            <a class="download-button text-no-decoration font-size-12" target="_blank" href="https://dbrey.github.io/Paper-Lunch/">PLAY ONLINE</a>
                         </li>
                     </ul>
                 </div>
@@ -313,11 +500,19 @@
         });
         document.querySelector('a[href="#experience"]').addEventListener('click', function(e) {
             e.preventDefault();
-        const seccion = document.getElementById("experience");
-        const offset = -150; // píxeles que quieres bajar desde el inicio de la sección
-        const y = seccion.getBoundingClientRect().top + window.pageYOffset + offset;
+            const seccion = document.getElementById("experience");
+            const offset = -150; // píxeles que quieres bajar desde el inicio de la sección
+            const y = seccion.getBoundingClientRect().top + window.pageYOffset + offset;
 
-        window.scrollTo({ top: y, behavior: "smooth" });
+            window.scrollTo({ top: y, behavior: "smooth" });
+        });
+        document.querySelector('a[href="#projects"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const seccion = document.getElementById("projects");
+            const offset = -150; // píxeles que quieres bajar desde el inicio de la sección
+            const y = seccion.getBoundingClientRect().top + window.pageYOffset + offset;
+
+            window.scrollTo({ top: y, behavior: "smooth" });
         });
     </script>
     <!-- SCRIPT FOR CURSOR GLOWING -->
@@ -343,6 +538,48 @@
                 })
             })
         })
+        const project_card = document.querySelectorAll(".project-card");
+        project_card.forEach(card=>{
+            card.addEventListener("mouseenter",()=>{
+                project_card.forEach(i=>{
+                    console.log(i);
+                    if(i!==card){
+                        i.style.opacity = 0.5;
+                    }
+                })
+            })
+        })
+        project_card.forEach(card=>{
+            card.addEventListener("mouseleave",()=>{
+                project_card.forEach(i=>{
+                    console.log(i);
+                    if(i!==card){
+                        i.style.opacity = 1;
+                    }
+                })
+            })
+        })
+    </script>
+    <!-- SCRIPT FOR SCROLL -->
+    <script>
+        const secciones = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-indicator');
+
+        window.addEventListener('scroll', () => {
+        secciones.forEach(seccion => {
+            const rect = seccion.getBoundingClientRect();
+            const id = seccion.getAttribute('id');
+
+            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+
+                // Añadir "active" al enlace correspondiente
+                const linkActivo = document.querySelector(`.nav-indicator[href="#${id}"]`);
+                if (linkActivo) {
+                  linkActivo.classList.add('active');
+                }
+            }
+        });
+        });
     </script>
 </body>
 </html>
